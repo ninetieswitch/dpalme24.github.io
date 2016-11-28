@@ -1,0 +1,45 @@
+<HTML>
+<head>
+<title>Time Dilation Calculator</title>
+</head>
+<body>
+<script>
+var tfr;
+var speed;
+var c2 = 90000000000;
+
+function GetRelative(speed){
+var speed2 = speed*speed;
+var GRstep1 = speed2/c2;
+var GRstep2 = 1-step1;
+var GRstep3 = Math.sqrt(step2);
+var GRR = (tfr/step3)-1;
+console.log(GRR);
+confirm(GRR);
+}
+
+function GetSpeed(tfr){
+var GSRelative = prompt("Relative Time in seconds");
+var tfr2 = tfr*tfr;
+var GSR2 = GSRelative*GSRelative;
+var GSstep1 = tfr2/GSR2;
+var GSstep2 = (GSstep1*c2)+1;
+var GSR = Math.sqrt(GSstep2);
+console.log(GSR);
+confirm(GSR);
+}
+
+function GetFrame(speed){
+speed2 = speed*speed;
+var GFRelative = prompt("Relative Speed in km/s");
+var GFstep1 = speed2/c2;
+var GFstep2 = 1-GFstep1;
+var GFstep3 = Math.sqrt(GFstep2);
+var GFR = GFstep3*GFRelative;
+console.log(GFR);
+confirm(GFR);
+}
+
+</script>
+</body>
+</HTML>
