@@ -5,14 +5,16 @@
   <body background="Matrix.gif")>
     <font color = "White">
     <br>Get Frame (Speed)<br>
+      <br><button type="button">Get Time For Frame</button><br>
   <br>Get Relative(Speed)<br>
+      <br><button type="button">Get Relative Speed</button><br>
   <br>Get Speed(Time For Reference)<br>
+      <br><button type="button">Get Speed</button><br>
 <script>
-var tfr;
-var speed;
 var c = 90000000000;
 
-function GetRelative(speed){
+function GetRelative(){
+var speed = prompt("Speed in km/s");
 var tffr = prompt("Time For Reference in seconds");
 var speed2 = speed*speed;
 var GRstep1 = speed2/90000000000;
@@ -24,6 +26,7 @@ confirm(GRR);
 }
 
 function GetSpeed(tfr){
+var tfr = prompt("Time For Reference in seconds");
 var GSRelative = prompt("Relative Time in seconds");
 var tfr2 = tfr*tfr;
 var GSR2 = GSRelative*GSRelative;
@@ -34,9 +37,10 @@ console.log(GSR);
 confirm(GSR);
 }
 
-function GetFrame(speed){
+function GetFrame(){
+var speed = prompt("Speed in km/s");
 speed2 = speed*speed;
-var GFRelative = prompt("Relative Speed in km/s");
+var GFRelative = prompt("Relative Time in seconds");
 var GFstep1 = speed2/c2;
 var GFstep2 = 1-GFstep1;
 var GFstep3 = Math.sqrt(GFstep2);
