@@ -31,7 +31,7 @@ var GSRelative = prompt("Relative Time in seconds");
 var tfr2 = tfr*tfr;
 var GSR2 = GSRelative*GSRelative;
 var GSstep1 = tfr2/GSR2;
-var GSstep2 = (GSstep1*c2)+1;
+var GSstep2 = (GSstep1*90000000000)+1;
 var GSR = Math.sqrt(GSstep2);
 console.log(GSR);
 confirm(GSR);
@@ -41,7 +41,7 @@ function GetFrame(){
 var speed = prompt("Speed in km/s");
 speed2 = speed*speed;
 var GFRelative = prompt("Relative Time in seconds");
-var GFstep1 = speed2/c2;
+var GFstep1 = speed2/90000000000;
 var GFstep2 = 1-GFstep1;
 var GFstep3 = Math.sqrt(GFstep2);
 var GFR = GFstep3*GFRelative;
