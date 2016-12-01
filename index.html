@@ -22,14 +22,15 @@ console.log(GRR);
 confirm(GRR);
 }
 
-function GetSpeed(tfr){
+function GetSpeed(){
 var tfr = prompt("Time For Reference in seconds");
 var GSRelative = prompt("Relative Time in seconds");
 var tfr2 = tfr*tfr;
 var GSR2 = GSRelative*GSRelative;
 var GSstep1 = tfr2/GSR2;
-var GSstep2 = (GSstep1*90000000000)+1;
-var GSR = Math.sqrt(GSstep2);
+var GSstep2 = (GSstep1*90000000000);
+var GSstep3 = GSstep2 +1;
+var GSR = Math.sqrt(GSstep3);
 console.log(GSR);
 confirm(GSR);
 }
