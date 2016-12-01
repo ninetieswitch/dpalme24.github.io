@@ -14,9 +14,9 @@ var c2 = 90000000000;
 function GetRelative(speed){
 var speed2 = speed*speed;
 var GRstep1 = speed2/c2;
-var GRstep2 = 1-step1;
-var GRstep3 = Math.sqrt(step2);
-var GRR = (tfr/step3)-1;
+var GRstep2 = 1 - GRstep1;
+var GRstep3 = Math.sqrt(GRstep2);
+var GRR = (tfr/GRstep3)-1;
 console.log(GRR);
 confirm(GRR);
 }
