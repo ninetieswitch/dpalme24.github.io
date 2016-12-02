@@ -3,7 +3,10 @@
 <title>Gravitational Attraction</title>
 </head>
 <body background="Matrix.gif")>
+   <br><button onclick="PokemonGoToThePolls()">Calculate</button><br>
+  <br><a href="index.html">Go Back </a><br>
 <script>
+  function PokemonGoToThePolls() {
 var m1=prompt("Mass 1 (in kg)");
 var m2=prompt("Mass 2 (in kg)");
 var d =prompt("Distance in meters");
@@ -13,6 +16,7 @@ var s1 =m1*m2;
 var s2 = s1/d2;
 var F = s2*g;
 confirm(F); 
+  }
 </script>
 </body>
 </HTML>
