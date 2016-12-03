@@ -15,7 +15,64 @@ var n = Math.random();
     }
  else {
         confirm("Escojo" + " " + Two);
-    }
+    }var choices = prompt("Cuantas Opciones?(Número arábigo)");
+
+if(choices == null){confirm("Entonces no estes chingando");}
+
+if(choices == "1"){confirm("Esa");}
+
+
+
+if(choices == "2"){
+var One = prompt("Opción 1");
+var Two = prompt("Opción 2");
+var n;
+n = Math.random();
+if(n <= 0.5){confirm("Escojo" + " " + One);}
+else {confirm("Escojo" + " " + Two);}
+}
+
+
+if(choices == "3"){
+var One = prompt("Opción 1");
+var Two = prompt("Opción 2");
+var Three = prompt("Opción 3");
+var n;
+n = Math.random();
+if(n <= 0.33){confirm("Escojo" + " " + One);}
+if(n >= 0.66) {confirm("Escojo" + " " + Two);}
+else {confirm("Escojo" + " " + Three);}
+}
+
+
+if(choices == "4"){
+var One = prompt("Opción 1");
+var Two = prompt("Opción 2");
+var Three = prompt("Opción 3");
+var Four = prompt("Opción 4");
+var n;
+n = Math.random();
+if(n <= 0.25){confirm("Escojo" + " " + One);}
+if(n <= 0.50 && (n >= 0.26)) {confirm("Escojo" + " " + Two);}
+if(n >= 0.75 && (n >= 0.51)) {confirm("Escojo" + " " + Three);}
+if(n >= 0.76) { confirm("Escojo" + " " + Four);}
+}
+
+
+if(choices == "5"){
+var One = prompt("Opción 1");
+var Two = prompt("Opción 2");
+var Three = prompt("Opción 3");
+var Four = prompt("Opción 4");
+var Five = prompt("Opción 5");
+var n;
+n = Math.random();
+if(n <= 0.20){confirm("Escojo" + " " + One);}
+if(n <= 0.40 && (n >= 0.21)) {confirm("Escojo" + " " + Two);}
+if(n <= 0.60 && (n >= 0.41)) {confirm("Escojo" + " " + Three)}
+if(n <= 0.80 && (n >= 0.61) {confirm("Escojo" + " " + Four)}
+if(n >= 0.80) { confirm("Escojo" + " " + Five}
+}
  }
 </script>
 </body>
