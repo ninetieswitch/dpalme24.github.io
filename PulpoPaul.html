@@ -9,20 +9,24 @@
   <br><button onclick="Choose5()">5 Opciones</button><br>
   <h3><br><a href="index.html">Go Back </a><br></h3>
 <script>
+  var One;
+  var Two;
+  var Three;
+  var Four;
+  var Five;
+  var n;
  function Choose2() {
-var One = prompt("Opción 1");
-var Two = prompt("Opción 2");
-var n;
+One = prompt("Opción 1");
+Two = prompt("Opción 2");
 n = Math.random();
 if(n <= 0.5){confirm("Escojo" + " " + One);}
 else{confirm("Escojo" + " " + Two);}
  }
 
   function Choose3() {
-var One = prompt("Opción 1");
-var Two = prompt("Opción 2");
-var Three = prompt("Opción 3");
-var n;
+One = prompt("Opción 1");
+Two = prompt("Opción 2");
+Three = prompt("Opción 3");
 n = Math.random();
 if(n <= 0.33){confirm("Escojo" + " " + One);}
 if(n >= 0.66) {confirm("Escojo" + " " + Two);}
@@ -30,11 +34,11 @@ else {confirm("Escojo" + " " + Three);}
   }
   
  function Choose4 {
-var One = prompt("Opción 1");
-var Two = prompt("Opción 2");
-var Three = prompt("Opción 3");
-var Four = prompt("Opción 4");
-var n = Math.random();
+One = prompt("Opción 1");
+Two = prompt("Opción 2");
+Three = prompt("Opción 3");
+Four = prompt("Opción 4");
+n = Math.random();
 if(n <= 0.25){confirm("Escojo" + " " + One);}
 if(n <= 0.50 && (n >= 0.26)) {confirm("Escojo" + " " + Two);}
 if(n >= 0.75 && (n >= 0.51)) {confirm("Escojo" + " " + Three);}
@@ -42,12 +46,12 @@ if(n >= 0.76) { confirm("Escojo" + " " + Four);}
  }
 
    function Choose5 {
-var One = prompt("Opción 1");
-var Two = prompt("Opción 2");
-var Three = prompt("Opción 3");
-var Four = prompt("Opción 4");
-var Five = prompt("Opción 5");
-var n = Math.random();
+One = prompt("Opción 1");
+Two = prompt("Opción 2");
+Three = prompt("Opción 3");
+Four = prompt("Opción 4");
+Five = prompt("Opción 5");
+n = Math.random();
 if(n <= 0.20){confirm("Escojo" + " " + One);}
 if(n <= 0.40 && (n >= 0.21)) {confirm("Escojo" + " " + Two);}
 if(n <= 0.60 && (n >= 0.41)) {confirm("Escojo" + " " + Three)}
