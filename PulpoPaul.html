@@ -3,10 +3,10 @@
 <title>Decision Maker</title>
 </head>
 <body background="Matrix.gif") link="White" vlink="White" alink="White">
-  <br><button onclick="Choose2()">2 Opciones</button><br>
-  <br><button onclick="Choose3()">3 Opciones</button><br>
-  <br><button onclick="Choose4()">4 Opciones</button><br>
-  <br><button onclick="Choose5()">5 Opciones</button><br>
+  <br><button onclick="GetGood()">2 Opciones</button><br>
+  <br><button onclick="GetRight()">3 Opciones</button><br>
+  <br><button onclick="GetRekt()">4 Opciones</button><br>
+  <br><button onclick="GetFuk()">5 Opciones</button><br>
   <h3><br><a href="index.html">Go Back </a><br></h3>
 <script>
   var One;
@@ -15,15 +15,16 @@
   var Four;
   var Five;
   var n;
- function Choose2() {
+  
+function GetGood() {
 One = prompt("Opción 1");
 Two = prompt("Opción 2");
 n = Math.random();
 if(n <= 0.5){confirm("Escojo" + " " + One);}
 else{confirm("Escojo" + " " + Two);}
- }
+}
 
-  function Choose3() {
+function GetRight() {
 One = prompt("Opción 1");
 Two = prompt("Opción 2");
 Three = prompt("Opción 3");
@@ -31,9 +32,9 @@ n = Math.random();
 if(n <= 0.33){confirm("Escojo" + " " + One);}
 if(n >= 0.66) {confirm("Escojo" + " " + Two);}
 else {confirm("Escojo" + " " + Three);}
-  }
+}
   
- function Choose4 {
+ function GetRekt() {
 One = prompt("Opción 1");
 Two = prompt("Opción 2");
 Three = prompt("Opción 3");
@@ -45,7 +46,7 @@ if(n >= 0.75 && (n >= 0.51)) {confirm("Escojo" + " " + Three);}
 if(n >= 0.76) { confirm("Escojo" + " " + Four);}
  }
 
-   function Choose5 {
+   function GetFuk() {
 One = prompt("Opción 1");
 Two = prompt("Opción 2");
 Three = prompt("Opción 3");
