@@ -9,13 +9,13 @@
       <br><button onclick="GetSpeed()">Get Speed</button><br>
       <br><button onclick="GetRelative()">Get Relative Time</button><br>
 <script>
-var c = 90000000000;
+var c = 9e10;
 
 function GetRelative(){
 var speed = prompt("Speed in km/s");
 var tffr = prompt("Time For Reference in seconds");
 var speed2 = speed*speed;
-var GRstep1 = speed2/90000000000;
+var GRstep1 = speed2/c;
 var GRstep2 = 1 - GRstep1;
 var GRstep3 = Math.sqrt(GRstep2);
 var GRR = (tffr/GRstep3)-1;
@@ -29,7 +29,7 @@ var GSRelative = prompt("Relative Time in seconds");
 var tfr2 = tfr*tfr;
 var GSR2 = GSRelative*GSRelative;
 var GSstep1 = tfr2/GSR2;
-var GSstep2 = (GSstep1*90000000000);
+var GSstep2 = (GSstep1*c);
 var GSstep3 = GSstep2 +1;
 var GSR = Math.sqrt(GSstep3);
 console.log(GSR);
@@ -40,7 +40,7 @@ function GetFrame(){
 var speed = prompt("Speed in km/s");
 speed2 = speed*speed;
 var GFRelative = prompt("Relative Time in seconds");
-var GFstep1 = speed2/90000000000;
+var GFstep1 = speed2/c;
 var GFstep2 = 1-GFstep1;
 var GFstep3 = Math.sqrt(GFstep2);
 var GFR = GFstep3*GFRelative;
