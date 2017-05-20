@@ -22,10 +22,12 @@ function VectorCalc() {
     x += force * Math.cos(angle);
     y += force * Math.sin(angle);
   }
-  //Establish Final Stuff
-  Fr = Math.Sqrt(y^2+x^2);
+  
+   //Establish Final Stuff
+  Fr = Math.sqrt(y^2+x^2);
   theta = tan(y/x);
-  //Confirm Result
+  
+   //Confirm Result
   if(x>=0 && y>=0){
     confirm(Fr);
     confirm(theta);
