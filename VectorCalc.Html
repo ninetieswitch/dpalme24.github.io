@@ -1,0 +1,47 @@
+<HTML>
+<head>
+<title>Vector Calculator</title>
+</head>
+<body background="Firewatch-4K-Wallpaper-1.jpg") link="White" vlink="White" alink="White">
+   
+   <br><button onclick="VecotrCalc()">Calculate</button><br>
+  <h3><br><a href="index.html">Fuck, Go Back</a><br></h3>
+<script>
+function VectorCalc() {
+  var i;
+  var count = prompt("Number of vectors");
+  var x;
+  var y;
+  var Fr;
+  var theta;
+  
+  for(i=0; i<count; i++){
+    var force = prompt("Vector Force");
+    var angle = prompt("Vector Angle");
+    x += force * Math.cos(angle);
+    y += force * Math.sin(angle);
+  }
+  //Establish Final Stuff
+  Fr = Math.Sqrt(y^2+x^2);
+  theta = tan(y/x);
+  //Confirm Result
+  if(x>=0 && y>=0){
+    confirm(Fr);
+    confirm(theta);
+  }
+  if(x<=0 && y>=0){
+    confirm(Fr);
+    confirm(theta+180);
+  }
+  if(x>=0 && y<=0){
+    confirm(Fr);
+    confirm(theta+360);
+  }
+  if(x<=0 && y<=0){
+    confirm(Fr);
+    confirm(theta+270);
+  }  
+}
+</script>
+</body>
+</HTML>
